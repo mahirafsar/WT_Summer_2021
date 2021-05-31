@@ -6,7 +6,7 @@
 <hr>
 
 <form>
-<table style="width: 35%">
+<table>
   <tr>
     <td><label for="fname">Full Name:</label></td>
     <td><input type="text" id="fname" name="fname"></td>
