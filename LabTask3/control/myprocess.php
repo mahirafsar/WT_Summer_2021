@@ -7,11 +7,8 @@
 	      'email'=>$_POST["email"],
 	      'pwd'=> $_POST["pwd"],
 	      'com'=> $_POST["com"],
-	      'gender'=> $_POST["gender"],
-	      //'hobby1'=> $_POST["hobby1"],
-	      //'hobby2'=> $_POST["hobby2"],
-	      //'hobby3'=> $_POST["hobby3"]
-
+	      'gender'=> $_POST["gender"]
+	  
 	   );
 
         if(isset($_REQUEST["hobby1"]))
@@ -43,13 +40,4 @@
 	 $mydata = json_decode($data);
 
     
-	//  echo "my value: ".$mydata[5]->firstName;
-/*	 foreach($mydata as $myobject)
-	 {
-	 foreach($myobject as $key=>$value)
-	{
-		echo "your ".$key." is ".$value."<br>";
-	} 
-	}
-	*/
 ?>
