@@ -1,0 +1,37 @@
+[
+    {
+        "firstname": "",
+        "email": "",
+        "pwd": "",
+        "com": "",
+        "gender": "Male",
+        "hobby2": "Dancing",
+        "hobby3": "Reading"
+    },
+    {
+        "firstname": "mahir",
+        "email": "mahirafsar1010@gmail.com",
+        "pwd": "1234567890",
+        "com": "my name is mahir.",
+        "gender": "Male",
+        "hobby1": "Singing",
+        "hobby3": "Reading"
+    },
+    {
+        "firstname": "afsar",
+        "email": "18-36132-1@student.aiub.edu",
+        "pwd": "owjewjejbhebhj",
+        "com": "mahir afsar",
+        "gender": "Male",
+        "hobby2": "Dancing"
+    },
+    {
+        "firstname": "mahir",
+        "email": "rrezaulhaque@yahoo.com",
+        "pwd": "fvefbewhifbjebjewbj",
+        "com": "hi, how are you?",
+        "gender": "Male",
+        "hobby1": "Singing",
+        "hobby2": "Dancing"
+    }
+]
