@@ -13,7 +13,7 @@ function OpenCon()
  }
  function CheckUser($conn,$table,$username,$password)   //login
  {
- $result = $conn->query("SELECT * FROM ". $table." WHERE username='". $username."' AND password='". $password."'");
+$result = $conn->query("SELECT * FROM ". $table." WHERE username='". $username."' AND password='". $password."'");
  return $result;
  }
 
@@ -35,29 +35,11 @@ $result = $conn->query("SELECT * FROM  $table");
     return  $result;
  }
 
- function searchUser($conn,$table,$username)
+ function SearchUser($conn,$table,$username)
  {
-    $sql = "SELECT * FROM ". $table." WHERE username='". $username."'";
-    $result = $conn->query($sql);
-    return $result;
-    
-    // if ($result->num_rows > 0) {
-    // // output data of each row
-    // while($row = $result->fetch_assoc()) {
-    // echo "username: " . $row["username"]. " - email: " . $row["email"]."<br>";
-    // $_POST["email"]=$row["email"];
-    // }
-    // } 
-    // else {
-    // echo "0 results";
-    // }
+     $result = $conn->query("SELECT * FROM ". $table." WHERE username='". $username."'");
+     return $result;
  }
-
-//  function Search($conn,$table,$username)
-//  {
-//     $result = $conn->query("SELECT * FROM ". $table." WHERE username='$' ");
-//     return $result;
-//  }
 
 function CloseCon($conn)
  {
