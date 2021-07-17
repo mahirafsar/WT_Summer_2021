@@ -17,10 +17,14 @@ Hii, <h3> <?php echo $_SESSION["username"];?></h3>
 
 
 <h5>Do you want to go to <a href="pagetwo.php"> MY Profile</a></h5>
-<h5>Do you want to  <a href="addproduct.php"> Add Product</a></h5>
 
-<br/>
- <h5>Do you want to <a href="../control/logout.php">logout</a></h5>
+<h5>Do you want to go to <a href="addproduct.php">ADD PRODUCT</a></h5>
+
+<h5>Do you want to go to <a href="showproduct.php">SHOW PRODUCT</a></h5>
+
+<h5>Do you want to go to <a href="searchproduct.php">SEARCH PRODUCT</a></h5>
+
+<h5>Do you want to <a href="../control/logout.php">logout</a></h5>
 
 </body>
 </html>
@@ -29,5 +33,3 @@ Hii, <h3> <?php echo $_SESSION["username"];?></h3>
 
 
 ?>   
-
-
