@@ -11,19 +11,11 @@ function OpenCon()
  
  return $conn;
  }
- function CheckUser($conn,$table,$username,$password)
+ function CheckUser($conn,$table,$username,$password)   //login
  {
 $result = $conn->query("SELECT * FROM ". $table." WHERE username='". $username."' AND password='". $password."'");
  return $result;
  }
-
- function AddProduct($conn,$table,$pname,$pdesc,$pcategory,$pprice,$pimage)
- {
-$result = $conn->query("INSERT INTO $table VALUES('','$pname','$pdesc','$pcategory',$pprice,'$pimage')");
- return $result;
- }
-
-
 
  function ShowAll($conn,$table)
  {
@@ -31,9 +23,9 @@ $result = $conn->query("SELECT * FROM  $table");
  return $result;
  }
 
- function UpdateUser($conn,$table,$username,$firstname,$email,$gender,$dob)
+ function UpdateUser($conn,$table,$username,$firstname,$email,$gender,$address)
  {
-     $sql = "UPDATE $table SET firstname='$firstname', email='$email', gender='$gender',dob='$dob' WHERE username='$username'";
+     $sql = "UPDATE $table SET firstname='$firstname', email='$email', gender='$gender', address='$address' WHERE username='$username'";
 
     if ($conn->query($sql) === TRUE) {
         $result= TRUE;
@@ -42,6 +34,25 @@ $result = $conn->query("SELECT * FROM  $table");
     }
     return  $result;
  }
+
+ function AddUser($conn,$table,$pname,$pdesc,$pcate,$pprice,$pimage)   
+ {
+ $result = $conn->query("INSERT INTO $table VALUES('','$pname','$pdesc','$pcate',$pprice,'$pimage')");
+ return $result;
+ }
+
+ function ShowAllProduct($conn,$table)
+ {
+ $result = $conn->query("SELECT * FROM  $table");
+ return $result;
+ }
+
+ function SearchProduct($conn,$table,$id)
+ {
+    $result = $conn->query("SELECT * FROM ". $table." WHERE P_id='". $id."'");
+    return $result;
+ }
+
 
 function CloseCon($conn)
  {
