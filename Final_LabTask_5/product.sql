@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 13, 2021 at 11:19 AM
+-- Generation Time: Jul 17, 2021 at 10:42 PM
 -- Server version: 10.4.19-MariaDB
--- PHP Version: 8.0.6
+-- PHP Version: 8.0.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -41,7 +41,11 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`P_id`, `P_Name`, `P_Desc`, `P_Category`, `P_Price`, `P_Picture`) VALUES
-(1, 'asda', 'asdasd', 'asdas', 123, '../file/Screenshot_2017-02-27-19-20-46.jpg');
+(1, 'asda', 'asdasd', 'asdas', 123, '../file/messi.png'),
+(2, 'rice', ' Rice is cooked by boiling, or it can be ground into a flour', 'food', 50, '../file/rice.jpg'),
+(3, 'rice', 'rice', 'food', 100, '../file/rice.jpg'),
+(4, 'rice', 'rice', 'grocery', 150, '../file/messi.png'),
+(6, 'beef', 'beef is my favorite food', 'meat', 600, '../file/beef.jpg');
 
 --
 -- Indexes for dumped tables
@@ -61,7 +65,7 @@ ALTER TABLE `product`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `P_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `P_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
